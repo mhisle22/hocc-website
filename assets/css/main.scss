@@ -1,0 +1,54 @@
+---
+---
+/*****************************************
+Modules: Meant for code that output css - mixins, functions, variables
+Partials: Meat of the CSS - components, buttons, images
+Vendor: Don't edit this directory, this is for libraries like bootstrap
+
+*****************************************/
+
+@charset "utf-8";
+
+// Vendor
+@import 'vendor/bootstrap';
+
+// Helpers
+@import 'helpers/bootvar';
+@import 'helpers/variables';
+@import 'helpers/color';
+@import 'helpers/font-rem';
+@import 'helpers/elements';
+@import 'helpers/animations';
+@import 'helpers/responsive';
+
+// Base
+@import 'base/root';
+@import 'base/typography';
+
+// Components
+@import 'components/achievements';
+@import 'components/banner';
+@import 'components/button';
+@import 'components/milestone';
+@import 'components/photo-gallery';
+@import 'components/slider';
+@import 'components/subscribe';
+@import 'components/testimonials';
+@import 'components/title';
+@import 'components/panel';
+@import 'components/hover-items';
+@import 'components/icon-panel';
+@import 'components/accordion';
+@import 'components/modal';
+
+// Layout
+@import 'layout/footer';
+@import 'layout/header';
+
+// Pages
+@import 'pages/home';
+@import 'pages/about';
+
+h1 {
+	color: black;
+}

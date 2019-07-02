@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300,400');
+
+@-webkit-keyframes sdb04 {
+    0% {
+      -webkit-transform: rotate(-45deg) translate(0, 0);
+    }
+    20% {
+      -webkit-transform: rotate(-45deg) translate(-10px, 10px);
+    }
+    40% {
+      -webkit-transform: rotate(-45deg) translate(0, 0);
+    }
+  }
+  @keyframes sdb04 {
+    0% {
+      transform: rotate(-45deg) translate(0, 0);
+    }
+    20% {
+      transform: rotate(-45deg) translate(-10px, 10px);
+    }
+    40% {
+      transform: rotate(-45deg) translate(0, 0);
+    }
+  }
+
+  a.view-more span {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 24px;
+    height: 24px;
+    margin-left: -12px;
+    border-left: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-animation: sdb04 2s infinite;
+    animation: sdb04 2s infinite;
+    box-sizing: border-box;
+  }
+  a.view-more {
+    padding-top: 100px;
+    position: absolute;
+    left: 50%;
+    z-index: 1000;
+    display: inline-block;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    color: #fff;
+    font: normal 400 20px/1 'Josefin Sans', sans-serif;
+    letter-spacing: .1em;
+    text-decoration: none;
+    transition: opacity .3s;
+  }
+  a.view-more:hover {
+    opacity: .5;
+  }
+
+.lgx-banner {
+  background: url($hero-img-url) bottom center no-repeat;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  color: $white-color;
+
+  .lgx-inner {
+    position: static;
+    height: auto;
+    padding: 28rem 0;
+  }
+  .lgx-inner-fixed {
+    padding: 28rem 0;
+  }
+}
+
+.lgx-banner-small {
+  height: 300px;
+  background-size: cover;
+  background-position: center center;
+  margin-bottom: 30px;
+}
+
+#Workspace .lgx-banner-inner {
+  background-image: url('../../images/banners/workspace.jpg');
+}
+
+#Fellowship .lgx-banner-inner {
+  background-image: url('../../images/banners/fellowship.jpg');
+}
+
+.lgx-banner-info {
+  font-family: $lgx-heading-font;
+  color: $black-color;
+  .subtitle {
+    color: $brand-color;
+    @include font-size(39);
+    font-weight: 100;
+    margin: 0;
+  }
+  .title {
+    @include font-size(39);
+    line-height: 5rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 8px;
+  }
+  .text {
+    @include font-size(15);
+    margin-bottom: 2rem;
+  }
+  .btn-area {
+    .lgx-btn {
+      margin-right: 1rem;
+    }
+  }
+}
+
+.lgx-banner-info-white {
+  .subtitle {
+    color: $white-color;
+    @include font-size(24);
+    letter-spacing: 2px;
+    font-weight: 300;
+    margin: 0;
+    text-transform: uppercase;
+  }
+  .title {
+    color: $white-color;
+    span {
+      //color: $brand-color;
+    }
+  }
+  .text {
+    color: $white-color;
+    opacity: .7;
+  }
+}
+
+.lgx-banner-info-center {
+  text-align: center;
+}
+.lgx-banner-info-right {
+  text-align: right;
+}
+
+
+//VIDEO
+.lgx-video-area-bg {
+  max-width: 600px;
+  margin: 0 auto;
+  figure {
+    position: relative;
+    border-radius: 10px;
+    img {
+      border-radius: 10px;
+    }
+    figcaption {
+      @include bg-rgba($black-color, 0.4);
+      border-radius: 10px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      .video-icon {
+        display: table;
+        height: 100%;
+        width: 100%;
+        .lgx-vertical {
+          display: table-cell;
+          text-align: center;
+          vertical-align: middle;
+        }
+        .icon {
+          position: relative;
+          z-index: 2;
+          @include transition-duration($duration: 0.3s);
+          &:after {
+            content: '';
+            position: absolute;
+            width: 190px;
+            height: 190px;
+            border-radius: 50%;
+            top: -20px;
+            left: -20px;
+            display: block;
+            @include bg-rgba($white-color, 0.5);
+            z-index: -1;
+            opacity: 0;
+            @include transition-duration($duration: 0.3s);
+          }
+          i {
+            display: inline-block;
+            background: $white-color;
+            color: $brand-color;
+            margin: 0px 45px;
+            border-radius: 50%;
+            height: 100px;
+            width: 100px;
+            text-align: center;
+            line-height: 100px;
+            font-size: 24px;
+            padding-left: 10px;
+            @include transition-duration($duration: 0.3s);
+          }
+          &:hover {
+            i {
+              background: $brand-color;
+              color: $white-color;
+              @include transition-duration($duration: 0.3s);
+              -webkit-box-shadow: 0 20px 35px rgba(0, 0, 0, 0.12);
+              -moz-box-shadow: 0 20px 35px rgba(0, 0, 0, 0.12);
+              box-shadow: 0 20px 35px rgba(0, 0, 0, 0.12);
+            }
+            &:before {
+              border: 5px solid rgba(255,255,255, 0);
+            }
+            &:after {
+              @include bg-rgba($white-color, 0);
+            }
+          }
+        }
+
+      }
+    }
+  }
+}
+.lgx-video-trans {
+  figure figcaption {
+    background: transparent;
+  }
+}
+.lgx-modal {
+  @include bg-rgba($black-color, 0.8);
+  .modal-dialog {
+    background: transparent;
+    box-shadow: none;
+    width: 100%;
+    .modal-content {
+      background: transparent;
+      box-shadow: none;
+      border: 0;
+      width: 100%;
+      .modal-header {
+        border-bottom: 0;
+        .close {
+          margin-top: -36px;
+          font-size: 30px;
+          color: $white-color;
+          padding: 7px 14px 8px;
+          border-radius: 50%;
+          opacity: .8;
+          -webkit-transition: all 0.2s ease-in-out 0s;
+          -moz-transition: all 0.2s ease-in-out 0s;
+          -ms-transition: all 0.2s ease-in-out 0s;
+          -o-transition: all 0.2s ease-in-out 0s;
+          transition: all 0.2s ease-in-out 0s;
+          &:hover {
+            opacity: 1;
+          }
+        }
+      }
+      .modal-body {
+        width: 70%;
+        margin: 0 auto;
+        background: $black-color;
+        iframe {
+          width: 100%;
+          height: 650px;
+          border: 0;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+

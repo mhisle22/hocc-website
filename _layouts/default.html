@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: page.lang | default: 'en' }}">
+
+	<head>
+		{% include head.html %}
+	</head>
+
+	<body class="page page-template">
+		<div class="lgx-container "></div>
+		<header>
+			{% include nav.html %}
+		</header>
+
+		<main class="main" id='{% if page.page_id %}{{ page.page_id }}{% else %}{{ page.title | remove:" " | downcase }}{% endif %}' aria-label="Content">
+			{{ content }}
+		</main>
+
+		<footer>
+			{% include footer.html %}
+		</footer>
+		{% include js-imports.html %}
+  </body>
+  
+
+</html>
