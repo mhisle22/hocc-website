@@ -147,9 +147,6 @@ ul.nav li.dropdown:hover ul.dropdown-menu {
     margin-right: -10px;
   }
 
-  .dropdown-submenu:hover>a:after {
-  }
-
   .dropdown-submenu.pull-left {
     float: none;
   }
@@ -216,10 +213,6 @@ ul.nav li.dropdown:hover ul.dropdown-menu {
           overflow: hidden;
           &:before {
             display: none;
-          }
-          &:hover {
-            //background: $brand-color;
-            //color: $white-color;
           }
         }
       }
@@ -1124,7 +1117,6 @@ ul.nav li.dropdown:hover ul.dropdown-menu {
 .bg-selectpicker {
   margin-right: -18px;
 }
-.bg-selectpicker {}
 
 
 .bg-gogin a {
