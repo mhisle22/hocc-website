@@ -25,29 +25,11 @@ Vendor: Don't edit this directory, this is for libraries like bootstrap
 @import 'base/root';
 @import 'base/typography';
 
-// Components
-@import 'components/achievements';
-@import 'components/banner';
-@import 'components/button';
-@import 'components/milestone';
-@import 'components/photo-gallery';
-@import 'components/slider';
-@import 'components/subscribe';
-@import 'components/testimonials';
-@import 'components/title';
-@import 'components/panel';
-@import 'components/hover-items';
-@import 'components/icon-panel';
-@import 'components/accordion';
-@import 'components/modal';
-
 // Layout
 @import 'layout/footer';
-@import 'layout/header';
 
 // Pages
 @import 'pages/home';
-@import 'pages/about';
 
 h1 {
 	color: black;

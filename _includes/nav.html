@@ -1,52 +1,38 @@
 <!-- Main navigational bar for pages -->
 
-<div id="lgx-header" class="lgx-header"> <!--lgx-header-container lgx-header-container-white lgx-header-container-brand lgx-header-singlemenu-->
-  
-  <div class="lgx-header-bottom lgx-header-bottom-fixed-black lgx-header-bottom-scrol-black"> <!--lgx-header-bottom-black lgx-header-bottom-brand--><!--lgx-header-bottom-fixed lgx-header-bottom-fixed-black lgx-header-bottom-fixed-brand lgx-header-bottom-fixed-transparent--><!--lgx-header-bottom-scrol-black lgx-header-bottom-scrol-brand-->
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-xs-12">
-          <nav class="navbar navbar-default lgx-navbar">
-            <div class="container">
-              <nav class="navbar navbar-default lgx-navbar lgx-navbar-search">
-                <div class="lgxcontainer">
-                  <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse"
-                        data-target=".navbar-collapse">
-                      <span class="sr-only">Toggle navigation</span>
-                      <span class="icon-bar"></span>
-                      <span class="icon-bar"></span>
-                      <span class="icon-bar"></span>
-                    </button>
-                    <div class="lgx-logo">
-                      <a href="/" class="lgx-scroll">
-                        <img src="/assets/images/hocc_logo.jpg" alt="Logo" class="img-responsive inline-block"/>
-                      </a>
-                    </div>
-                  </div>
-                  <div class="collapse navbar-collapse">
-                    <ul class="nav navbar-nav lgx-nav">
-                      <li>
-                        <a href="{{ site.data.routes.home }}" role="button">Home</a>
-                      <li>
-                      <li>
-                        <a href="{{ site.data.routes.stories }}" role="button">Stories </a>
-                      </li>
-                      <li><a href="{{ site.data.routes.request }}" role="button">Request </a>
-                      </li>
-                      <li><a href="{{ site.data.routes.centre }}" role="button">Centre </a>
-                      </li>
-                      <li><a href="{{ site.data.routes.about }}" >About</a>
-                      </li>
-                    </ul>
-                  </div>
-                  <!--/.nav-collapse -->
-                </div>
-              </nav>
-            </div><!-- /.container -->
-          </nav>
-        </div><!-- COL-XS-12 -->
-      </div><!--//.ROW-->
-    </div><!-- //.CONTAINER -->
-  </div><!-- //.INNER-->
+<div id="lgx-header" class="lgx-header">
+  <!--lgx-header-container lgx-header-container-white lgx-header-container-brand lgx-header-singlemenu-->
+
+  <nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+          data-target="#bs-example-navbar-collapse-1" aria-expanded="false" style="margin-top: 20px;">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <h3 style="color: white;">
+          Humans of Centre College
+        </h3>
+      </div>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right" style="margin-top: 15px;">
+          <li>
+            <a href="{{ site.data.routes.home }}" role="button">Home</a>
+          <li>
+          <li>
+            <a href="{{ site.data.routes.stories }}" role="button">Stories </a>
+          </li>
+          <li><a href="{{ site.data.routes.request }}" role="button">Request </a>
+          </li>
+          <li><a href="{{ site.data.routes.centre }}" role="button">Centre </a>
+          </li>
+          <li><a href="{{ site.data.routes.about }}">About</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 </div>
