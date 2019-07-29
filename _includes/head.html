@@ -1,5 +1,4 @@
 <!-- Used for meta-data and importing stylesheets. NOTE: This is imported at the top, any files that can be waited to load, should be added to the /_includes/footer.html file -->
-
 <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
 
 <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
@@ -14,7 +13,7 @@
 <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
 <meta name="description" content="{% if page.description %}{{ page.description | escape }}{% endif %}. {{ site.description }}"/>
 <meta name="keywords" content="{{ site.keywords }}"/>
-<meta name="author" content="HOCC"/>
+<meta name="author" content="Mark Hisle, HoCC"/>
 
 <!--  FAVICON AND TOUCH ICONS -->
 <!-- Shoutout to realfavicongenerator, you guys are legit-->
