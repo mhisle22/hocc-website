@@ -2,9 +2,22 @@
     .jumbotron {
         background-image: url("/assets/images/10252013_Campus_00311-overlay.jpg");
         background-size: cover;
-        height: 500px;
+        height: 600px;
     }
     .display-1 {
         color: white;
+    }
+    .btn {
+        background: #1a1a1a;
+        border-color: #404040;
+    }
+
+    .btn-primary:hover {
+        background: #262626;
+    }
+
+
+    #info-paragraph {
+        font-family: 'Merriweather';
     }
 }
