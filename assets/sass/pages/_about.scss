@@ -14,5 +14,17 @@
   #meet-team {
     margin-top: 100px;
   }
+
+  .profile {
+      width: 240px;
+      height: 300px;
+      -webkit-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.25);
+      -moz-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.25);
+      box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.25);
+  }
+
+  #bottom-link {
+    margin-top: 50px;
+  }
 }
 
