@@ -36,15 +36,17 @@
 <link rel="stylesheet" href="/assets/css/font-awesome.min.css" media="all"/>
 
 <!-- GOOGLE FONT -->
-<!--<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Merriweather:300,400,400i,700,900%7cLato:400,700,900"/>-->
 <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,900%7cUbuntu:300,300i,400,500,700"/>
 <!-- Exo -->
 <link href="//fonts.googleapis.com/css?family=Lato:300,700|Exo:300,800" rel="stylesheet" type="text/css">
 <!-- Open Sans -->
 <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans:200,300,400,600,800" />
-
 <!-- MODERNIZER CSS  -->
 <script src="/assets/js/vendor/modernizr-2.8.3.min.js"></script>
+
+<!-- Animate on Scroll -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 	</head>
 
 	<body class="page page-template">
@@ -91,9 +93,8 @@
 <section>
   <div class="jumbotron">
     <div class="container">
-      <h1 class="display-1">What's your story?</h1>
-      <!-- NOTE: please fix css so no inline mkaing every text white, its annoying as hell-->
-      <p style="color:white;">
+      <h1 class="display-1" id="slide-header">What's your story?</h1>
+      <p id="intro">
         Welcome to Humans of Centre College!
       </p>
       <br />
@@ -106,7 +107,7 @@
 </section>
 <!--BANNER END-->
 <section>
-  <div class="container mx-auto">
+  <div class="container mx-auto" id="bottom-info">
     <div class="col-md-8 col-md-offset-2">
       <h3>
         Humans of Centre College is inspired by the Humans of New York blog. It portrays the lives of Centre
@@ -127,6 +128,7 @@
         <br /><br /><br /><br />
       </p>
     </div>
+    <hr>
   </div>
 </section>
 		</main>
@@ -172,6 +174,12 @@
 <!-- SMOOTH SCROLL -->
 <script src="/assets/libs/jquery.smooth-scroll.min.js"></script>
 <script src="/assets/libs/jquery.easing.min.js"></script>
+
+<!-- Animate on scroll -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
   </body>
   
 
