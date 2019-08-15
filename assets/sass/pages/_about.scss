@@ -5,11 +5,108 @@
   }
   h1 {
     text-align: center;
+  }
+
+  #about-us {
+    margin-top: 120px;
+    font-size: 7.5rem;
+    @include screen-xs {
+      font-size: 6rem;
+    }
     
   }
 
+  #sga {
+    display: block;
+    width: 323px;
+    height: 174px;
+    margin-top: 40px;
+
+    //animation code below
+    position: relative;
+    opacity: 0;
+    -webkit-animation: slideIn 1s forwards;
+    -moz-animation: slideIn 1s forwards;
+    animation: slideIn 1s forwards;
+    -webkit-animation-delay: .25s;
+    -moz-animation-delay: .25s;
+    animation-delay: .25s;
+
+    @-webkit-keyframes slideIn {
+    0% {
+      transform: translateX(-100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    }
+    @-moz-keyframes slideIn {
+        0% {
+        transform: translateY(-100px);
+        opacity: 0;
+        }
+        100% {
+        transform: translateY(0);
+        opacity: 1;
+        }
+    }
+    @keyframes slideIn {
+        0% {
+        transform: translateY(-100px);
+        opacity: 0;
+        }
+        100% {
+        transform: translateY(0);
+        opacity: 1;
+        }
+    }
+  }
+
   #top-text {
-    margin-top: 150px;
+    margin-top: 60px;
+
+    //animation code below
+    position: relative;
+    opacity: 0;
+    -webkit-animation: slideIn 1s forwards;
+    -moz-animation: slideIn 1s forwards;
+    animation: slideIn 1s forwards;
+    -webkit-animation-delay: 1.25s;
+    -moz-animation-delay: 1.25s;
+    animation-delay: 1.25s;
+
+    @-webkit-keyframes slideIn {
+    0% {
+      transform: translateY(-100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    }
+    @-moz-keyframes slideIn {
+        0% {
+        transform: translateY(-100px);
+        opacity: 0;
+        }
+        100% {
+        transform: translateY(0);
+        opacity: 1;
+        }
+    }
+    @keyframes slideIn {
+        0% {
+        transform: translateY(-100px);
+        opacity: 0;
+        }
+        100% {
+        transform: translateY(0);
+        opacity: 1;
+        }
+    }
   }
 
   #meet-team {

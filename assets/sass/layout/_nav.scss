@@ -1,7 +1,33 @@
-#nav-header-text {
+#nav-header-text-large {
     margin-bottom: -42px;
     @include screen-xs {
-        font-size: 20px;
-        margin-left: 10px;
+        display: none
+    }
+    @include screen-md {
+        font-size: 18px;
+    }
+}
+
+#nav-header-text-abv {
+    margin-bottom: -56px;
+    font-size: 20px;
+    margin-left: 10px;
+
+    @include screen-lg {
+        display: none;
+    }
+    @include screen-max {
+        display: none;
+    }
+    @include screen-md {
+        display: none
+    }
+}
+
+#logo {
+    @include screen-xs {
+        width: 43px;
+        height: 23px;
+        margin-top: 12px;
     }
 }
