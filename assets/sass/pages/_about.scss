@@ -25,24 +25,24 @@
     //animation code below
     position: relative;
     opacity: 0;
-    -webkit-animation: slideIn 1s forwards;
-    -moz-animation: slideIn 1s forwards;
-    animation: slideIn 1s forwards;
+    -webkit-animation: dropIn 1s forwards;
+    -moz-animation: dropIn 1s forwards;
+    animation: dropIn 1s forwards;
     -webkit-animation-delay: .25s;
     -moz-animation-delay: .25s;
     animation-delay: .25s;
 
-    @-webkit-keyframes slideIn {
+    @-webkit-keyframes dropIn {
     0% {
-      transform: translateX(-100px);
+      transform: translateY(-100px);
       opacity: 0;
     }
     100% {
-      transform: translateX(0);
+      transform: translateY(0);
       opacity: 1;
     }
     }
-    @-moz-keyframes slideIn {
+    @-moz-keyframes dropIn {
         0% {
         transform: translateY(-100px);
         opacity: 0;
@@ -52,7 +52,7 @@
         opacity: 1;
         }
     }
-    @keyframes slideIn {
+    @keyframes dropIn {
         0% {
         transform: translateY(-100px);
         opacity: 0;
@@ -70,14 +70,14 @@
     //animation code below
     position: relative;
     opacity: 0;
-    -webkit-animation: slideIn 1s forwards;
-    -moz-animation: slideIn 1s forwards;
-    animation: slideIn 1s forwards;
+    -webkit-animation: dropIn 1s forwards;
+    -moz-animation: dropIn 1s forwards;
+    animation: dropIn 1s forwards;
     -webkit-animation-delay: 1.25s;
     -moz-animation-delay: 1.25s;
     animation-delay: 1.25s;
 
-    @-webkit-keyframes slideIn {
+    @-webkit-keyframes dropIn {
     0% {
       transform: translateY(-100px);
       opacity: 0;
@@ -87,7 +87,7 @@
       opacity: 1;
     }
     }
-    @-moz-keyframes slideIn {
+    @-moz-keyframes dropIn {
         0% {
         transform: translateY(-100px);
         opacity: 0;
@@ -97,7 +97,7 @@
         opacity: 1;
         }
     }
-    @keyframes slideIn {
+    @keyframes dropIn {
         0% {
         transform: translateY(-100px);
         opacity: 0;

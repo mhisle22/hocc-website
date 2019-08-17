@@ -24,10 +24,23 @@
     }
 }
 
+.navbar-collapse {
+    margin-top: 62px;
+}
+
 #logo {
     @include screen-xs {
         width: 43px;
         height: 23px;
         margin-top: 12px;
+    }
+}
+
+#suggest-form {
+    position: relative;
+    right: 36px;
+    @include screen-xs {
+        width: 320px;
+        left: 12px;
     }
 }
