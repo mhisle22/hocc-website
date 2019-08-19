@@ -113,14 +113,14 @@
         animation-delay: 1.5s;
 
         @-webkit-keyframes slideIn {
-        0% {
-          transform: translateX(-100px);
-          opacity: 0;
-        }
-        100% {
-          transform: translateX(0);
-          opacity: 1;
-        }
+            0% {
+            transform: translateX(-100px);
+            opacity: 0;
+            }
+            100% {
+            transform: translateX(0);
+            opacity: 1;
+            }
         }
         @-moz-keyframes slideIn {
             0% {
@@ -146,6 +146,53 @@
 
     .btn-primary:hover {
         background: #262626;
+    }
+
+    .fa-chevron-down {
+        color: goldenrod;
+        font-size: 3rem;
+        cursor: pointer;
+        margin-top: 140px;
+        display: inline-block;
+
+        position: relative;
+        -webkit-animation: pulse 2s infinite;
+        -moz-animation: pulse 2s infinite;
+        animation: pulse 2s infinite;
+
+        @-webkit-keyframes pulse {
+            0% {
+                transform: translate(0, 0);
+            }
+            50% {
+                transform: translate(0, 10px);
+            }
+            100% {
+                transform: translate(0, 0);
+            }
+        }
+        @-moz-keyframes pulse {
+            0% {
+                transform: translate(0, 0);
+            }
+            50% {
+                transform: translate(0, 10px);
+            }
+            100% {
+                transform: translate(0, 0);
+            }
+        }
+        @keyframes pulse {
+            0% {
+                transform: translate(0, 0);
+            }
+            50% {
+                transform: translate(0, 10px);
+            }
+            100% {
+                transform: translate(0, 0);
+            }
+        }
     }
 
 

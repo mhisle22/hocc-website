@@ -25,7 +25,9 @@
 }
 
 .navbar-collapse {
+    @include screen-xs {
     margin-top: 62px;
+    }
 }
 
 #logo {
