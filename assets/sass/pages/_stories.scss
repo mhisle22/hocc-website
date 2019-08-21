@@ -1,0 +1,61 @@
+#stories-header {
+    margin-top: 120px;
+    font-size: 8.5rem;
+    @include screen-xs {
+      font-size: 6rem;
+    }
+    
+}
+
+#header-hr-story {
+    border:none;
+    border-top:4px dotted goldenrod;
+    color:#fff;
+    background-color:#fff;
+    height:1px;
+    width:75%;
+    margin-top: 20px;
+}
+
+#paginator {
+    text-align: center;
+    font-weight: 650;
+    a {
+        color: goldenrod;
+    }
+
+    .active {
+        a {
+            color: white;
+            background: goldenrod;
+            border: 1px solid #ddd;
+        }
+    }
+
+    .disabled {
+        opacity: 0.65;
+    }
+}
+
+#story-title {
+    margin-bottom: 50px;
+}
+
+.social-link {
+    color: goldenrod;
+}
+
+.story-post {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+#bottom-hr {
+    margin-bottom: 60px;
+    border:none;
+    border-top:4px dotted goldenrod;
+    color:#fff;
+    background-color:#fff;
+    height:1px;
+    width:75%;
+}

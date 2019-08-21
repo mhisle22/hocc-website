@@ -3,6 +3,8 @@ home: "/"
 about: "/about"
 request: "/request"
 stories: "/stories"
+second-story: "/second-story"
+third-story: "/third-story"
 centre: "https://www.centre.edu/"
 
 # Social Media

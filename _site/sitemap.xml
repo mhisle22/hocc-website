@@ -10,6 +10,12 @@
 <loc>http://localhost:4000/</loc>
 </url>
 <url>
+<loc>http://localhost:4000/second-story.html</loc>
+</url>
+<url>
 <loc>http://localhost:4000/stories.html</loc>
+</url>
+<url>
+<loc>http://localhost:4000/third-story.html</loc>
 </url>
 </urlset>
