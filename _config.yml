@@ -3,7 +3,6 @@ title: Humans of Centre College
 description: > # this means to ignore newlines until "baseurl:"
   Humans of Centre College is inspired by the Humans of New York blog. 
   It portrays the lives of Centre students, faculty, and staff.
-baseurl: "/humansofcentre/" # the subpath of your site, e.g. /blog
 url: "http://humansofcentre.org/" # the base hostname & protocol for your site
 keywords: "Humans, Journalism, Centre College, Centre"
 
