@@ -2,7 +2,7 @@
 <nav class="navbar navbar-fixed-top navbar-inverse" style="background: rgba(26, 26, 26, 0.9);">
   <div class="container">
     <div class="row">
-    <a class="navbar-brand" href="{{site.data.routes.home}}" style="position:relative;">
+    <a class="navbar-brand" href="{{ site.baseurl }}{{site.data.routes.home}}" style="position:relative;">
       <img src="{{ site.baseurl }}/assets/images/opaque_logo.png" width="86px" height="46px" class="d-inline-block align-top" id="logo">
     </a>
     <h3 style="color: white;" id="nav-header-text-large" style="position:relative;">
@@ -21,16 +21,16 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav pull-right">
         <li>
-          <a href="{{ site.data.routes.home }}" role="button">Home</a>
+          <a href="{{ site.baseurl }}{{ site.data.routes.home }}" role="button">Home</a>
         <li>
         <li>
-          <a href="{{ site.data.routes.stories }}" role="button">Stories </a>
+          <a href="{{ site.baseurl }}{{ site.data.routes.stories }}" role="button">Stories </a>
         </li>
         <li><a href="#form-modal" role="button" data-toggle="modal" data-target="#form-modal">Suggest </a>
         </li>
         <li><a href="{{ site.data.routes.centre }}" role="button">Centre </a>
         </li>
-        <li><a href="{{ site.data.routes.about }}">About</a>
+        <li><a href="{{ site.baseurl }}{{ site.data.routes.about }}">About</a>
         </li>
       </ul>
     </div>
